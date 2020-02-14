@@ -1,7 +1,5 @@
 package unit03.binarySearch;
 
-import unit03.binarySearch.Util;
-
 public class BinarySearch2 {
 
     public static int binarySearch(Integer[] arr, int n, Integer target) {
