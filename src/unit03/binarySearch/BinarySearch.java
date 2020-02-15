@@ -1,5 +1,6 @@
 package unit03.binarySearch;
 
+// 二分查找法
 public class BinarySearch {
 
     private BinarySearch() {

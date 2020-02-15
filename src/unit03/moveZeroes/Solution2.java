@@ -6,6 +6,7 @@ package unit03.moveZeroes;
 // 原地(in place)解决该问题
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
+// 交换位置+计数法
 public class Solution2 {
     public void moveZeroes(int[] nums) {
 
@@ -15,7 +16,8 @@ public class Solution2 {
         // 都按照顺序排序在[0,k)中
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
-                nums[k++] = nums[i];
+                nums[k] = nums[i];
+                k++;
             }
         }
 
@@ -25,13 +27,13 @@ public class Solution2 {
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         int[] arr = {0, 1, 0, 3, 12};
 
         (new Solution2()).moveZeroes(arr);
 
-        for(int i = 0 ; i < arr.length ; i ++)
+        for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");
         System.out.println();
     }

@@ -6,6 +6,7 @@ package unit03.moveZeroes;
 // 原地(in place)解决该问题
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
+// 换位位置,后面都为0
 public class Solution3 {
     public void moveZeroes(int[] nums) {
 

@@ -1,8 +1,10 @@
 package unit03.binarySearch;
 
+// 二分查找法
 public class BinarySearch2 {
 
     public static int binarySearch(Integer[] arr, int n, Integer target) {
+
         int l = 0, r = n; //在[r,n)中查找target
         while (l < r) {
             int mid = l + (r - l) / 2;

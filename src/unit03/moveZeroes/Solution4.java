@@ -6,6 +6,7 @@ package unit03.moveZeroes;
 // 原地(in place)解决该问题
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
+// 交换位置优化代码
 public class Solution4 {
     public void moveZeroes(int[] nums) {
 
@@ -17,9 +18,9 @@ public class Solution4 {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
                 if (k != i) {
-                    swap(nums, k++, i);
+                    swap(nums, k++, i);// 优化: 位置不一样交换位置
                 } else {
-                    k++;
+                    k++; // 优化: 位置一样k++
                 }
             }
         }

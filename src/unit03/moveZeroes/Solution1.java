@@ -6,6 +6,7 @@ import java.util.ArrayList;
 // https://leetcode.com/problems/move-zeroes/description/
 // 时间复杂度: O(n)
 // 空间复杂度: O(n)
+// 计数法
 public class Solution1 {
     public void moveZeroes(int[] nums) {
 
