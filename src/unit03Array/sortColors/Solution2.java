@@ -1,4 +1,4 @@
-package unit03.sortColors;
+package unit03Array.sortColors;
 
 // 75. Sort Colors
 // https://leetcode-cn.com/problems/sort-colors/description/

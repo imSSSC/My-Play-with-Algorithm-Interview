@@ -1,4 +1,4 @@
-package unit03.binarySearch;
+package unit03Array.binarySearch;
 
 // 二分查找法
 public class BinarySearch2 {

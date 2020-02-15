@@ -1,4 +1,4 @@
-package unit03.moveZeroes;
+package unit03Array.moveZeroes;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package unit03.moveZeroes;
+package unit03Array.moveZeroes;
 
 // 283. Move Zeroes
 // https://leetcode.com/problems/move-zeroes/description/
@@ -6,8 +6,8 @@ package unit03.moveZeroes;
 // 原地(in place)解决该问题
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
-// 换位位置,后面都为0
-public class Solution3 {
+// 双路快排
+public class Solution4 {
     public void moveZeroes(int[] nums) {
 
         int k = 0;// nums中,[0,k)的元素均为非0元素
@@ -17,7 +17,11 @@ public class Solution3 {
         // 同时, [k...i] 为 0
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
-                swap(nums, k++, i);
+                if (k != i) {
+                    swap(nums, k++, i);// 优化: 位置不一样交换位置
+                } else {
+                    k++; // 优化: 位置一样k++
+                }
             }
         }
     }
@@ -32,7 +36,7 @@ public class Solution3 {
 
         int[] arr = {0, 1, 0, 3, 12};
 
-        (new Solution3()).moveZeroes(arr);
+        (new Solution4()).moveZeroes(arr);
 
         for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");

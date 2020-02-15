@@ -1,4 +1,4 @@
-package unit03.binarySearch;
+package unit03Array.binarySearch;
 
 public class Util {
 
