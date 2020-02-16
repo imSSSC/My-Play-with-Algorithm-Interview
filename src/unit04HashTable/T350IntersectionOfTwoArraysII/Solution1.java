@@ -1,6 +1,7 @@
 package unit04HashTable.T350IntersectionOfTwoArraysII;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.TreeMap;
 
 // 350. Intersection of Two Arrays II
@@ -11,7 +12,7 @@ import java.util.TreeMap;
 public class Solution1 {
     public int[] intersect(int[] nums1, int[] nums2) {
 
-        TreeMap<Integer, Integer> record = new TreeMap<>();
+        HashMap<Integer, Integer> record = new HashMap<>();
         for (int num1 : nums1) {
             if (!record.containsKey(num1))
                 record.put(num1, 1);
