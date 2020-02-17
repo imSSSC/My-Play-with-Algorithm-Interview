@@ -8,7 +8,7 @@ package unit05LinkList.T237DeleteNodeInALinkedList;
 // 237. 删除链表中的节点
 // https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
 //
-// 修改指针位置
+// 删除指定链表节点  复制后节点,指向下下个节点
 // 时间复杂度: O(1)
 // 空间复杂度: O(1)
 public class Solution1 {
